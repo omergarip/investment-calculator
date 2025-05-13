@@ -14,7 +14,7 @@ function App() {
   function handleChange(event) {
     setUserInput((prevState) => ({
       ...prevState,
-      [event.target.name]: event.target.value,
+      [event.target.name]: +event.target.value,
     }));
   }
 
